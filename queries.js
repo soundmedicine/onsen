@@ -2,20 +2,20 @@ const database = require("./database-connection");
 
 module.exports = {
     list(){
-        return database('resolution').select()
+        return database('onsen').select()
     },
     read(id){
-        return database('resolution').where('id', id).first()
+        return database('onsen').where('id', id).first()
     },
-    create(resolution){
-        return database('resolution').insert(resolution).returning('*')
+    create(onsen){
+        return database('onsen').insert(onsen).returning('*')
         .then(record => record[0])
     },
-    update(id, resolution){
-        return database('resolution').update(resolution).where('id', id).returning('*')
+    update(id, onsen){
+        return database('onsen').update(onsen).where('id', id).returning('*')
         .then(record => record[0])
     },
     delete(id){
-        return database('resolution').where('id', id).del()
+        return database('onsen').where('id', id).del()
     }
 };
