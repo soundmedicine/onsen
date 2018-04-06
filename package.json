@@ -1,5 +1,5 @@
 {
-    "name": "galvanize-memory",
+    "name": "onsen",
     "version": "0.0.2",
     "description": "",
     "main": "app.js",
@@ -7,8 +7,8 @@
         "start": "node index.js",
         "test": "mocha"
     },
-    "author": "Kyle Coberly",
-    "license": "ISC",
+    "author": "Roberto Santos",
+    "license": "",
     "dependencies": {
         "body-parser": "^1.18.2",
         "dotenv": "^5.0.1",
